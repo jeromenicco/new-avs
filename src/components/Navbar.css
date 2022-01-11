@@ -1,0 +1,161 @@
+.nav-container {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    margin-top: -100px;
+    padding-top: 100px;
+    /* transform: skewY(2deg); */
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.navbar-hidden {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background: white;
+    height: 100px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    opacity: 0.9;
+    animation: slideDown 0.5s ease-in;
+    /* border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+}
+
+@keyframes slideDown {
+    from {
+      margin-top: -100px;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
+  }
+
+
+.logo-container {
+    line-height: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 100%;
+    color: white; 
+}
+.logo-container-hidden {
+    line-height: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 100%;
+    color: black; 
+}
+
+
+.logo-letter {
+    font-weight: bold;
+    padding-right: 3px;
+    color: red;
+}
+.logo-words {
+    letter-spacing: 1px;
+}
+
+.phone-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: -20px;
+    height: 100%;
+}
+
+.phone-number {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.phone-number-hidden {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    color: black;
+}
+
+/* .menu-button {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+} */
+
+.menu-items-container {
+    font-weight: bold;
+    display: flex;
+    width: 120%;
+    justify-content: space-between;
+    margin-top: -6px;
+    color: white;
+    transition: 0.4s;
+}
+
+
+.menu-items-container-hidden {
+    font-weight: bold;
+    display: flex;
+    width: 120%;
+    justify-content: space-between;
+    margin-top: -6px;
+    transition: 0.4s;
+}
+
+.menu-items-container p, .menu-items-container-hidden p {
+    font-family: 'Recoleta-bold';
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.active-nav-link {
+    color: red
+}
+
+.active-nav-link-hidden {
+    color: red
+}
+
+.menu-items-container p:hover, .menu-items-container-hidden p:hover {
+    color: red;
+}
+.phone-menu-container-hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: -20px;
+    height: 100%;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
+
+.phone-number-hidden:hover {
+    text-decoration: underline;
+}
+
+
+

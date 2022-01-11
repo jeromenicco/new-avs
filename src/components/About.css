@@ -1,0 +1,26 @@
+.about-container {
+    width: 100vw;
+    /* height: 600px; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.about-content {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.loan-button-container button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    border: 1px solid lightgrey;
+    font-size: 25px;
+}

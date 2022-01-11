@@ -1,0 +1,77 @@
+@media screen and (max-width: 1080px) {
+
+  /* GLOBAL */
+
+  .component-content {
+    min-width: 80%;
+    margin: 0 20px;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    margin: auto 15px;
+  }
+
+  .parallax-text {
+    font-size: 30px;
+  }
+
+  .menu-items-container {
+    /* flex-direction: column;
+    text-align: end; */
+  }
+  
+  /* HERO */
+  
+  .hero-container {
+    height: 700px;
+  }
+
+  /* ABOUT */
+
+  .about-container {
+    height: 600px;
+    margin-top: -70px;
+  }
+
+  .contact-title {
+    line-height: 0.6;
+}
+  
+  /* INCLUDES */
+
+  .includes-container {
+    height: 2300px;
+  }
+
+  .includes-items-container {
+    flex-wrap: wrap;
+  }
+
+  .loan-button-container {
+    margin-top: 30px;
+  }
+
+
+  /* FOOTER */
+
+  .contact-footer-container {
+    display: none;
+    /* color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway';
+    font-size: 50px;
+    width: 550px;
+    padding-right: 10%; */
+  }
+
+  .company-info {
+    font-size: 20px;
+  }
+
+
+
+}

@@ -1,0 +1,30 @@
+.hero-container {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(#000000, #4c80f1);
+    /* background: black; */
+    /* clip-path: ellipse(100% 100% at 50% 0%); */
+    margin-top: -100px;
+    padding-top: 165px;
+    transform: skewY(2deg);
+}
+
+.hero-content {
+    transform: skewY(-2deg);
+}
+
+
+.parallax-text {
+    text-align: center;
+    height: fit-content;
+    font-family: 'Recoleta-Bold';
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(243, 243, 243);
+    position: absolute;
+    z-index: -1;
+}
