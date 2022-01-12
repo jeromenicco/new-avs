@@ -17,6 +17,7 @@ import { Link } from 'react-scroll'
 
 import './App.css';
 import './responsive.css'
+import SectionBreak from './components/SectionBreak'
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
       <Hero />
       <About Link={Link} />
       <Freeloan Link={Link} />
+      <SectionBreak />
       <Includes Link={Link}/>
       <Blog />
       <Contact />

@@ -68,7 +68,7 @@ function Includes({ Link }) {
                             }}>
                                 <p className='paragraph-text'>All our machines are available to <span>buy, rent or lease.</span><br /><br />
                                     AVS will handle everything for you…
-                                    from planning and installing, to restocking and servicing.<br />
+                                    from planning and installing, to restocking and servicing.<br /><br />
                                     With our flexible, efficient and friendly service, we will make sure you, your staff, and your customers are happy.</p>
                             </div>
                         )}

@@ -28,7 +28,7 @@ function Freeloan({ Link }) {
                                     Once our machines are installed <span>we supply all the products and ingredients</span>, making regular visits to fill, clean and maintain the machines.</p>
                                 <p className='paragraph-text'>This type of managed vending service is at <span>absolutley no cost to the customer</span> and offers your business a great way to keep your staff and your ‘pocket’ happy!</p>
                                 <br />
-                                <p className='paragraph-text'>* Machines remain the property of AVS</p>
+                                <p className='paragraph-text'><span>* Machines remain the property of AVS</span></p>
                             </div>
                         )}
                     >

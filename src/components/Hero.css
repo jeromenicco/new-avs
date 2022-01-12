@@ -5,8 +5,12 @@
     display: block;
     box-sizing: border-box;
     /* background: radial-gradient(#7c0505, #000000); */
-    background: var(--blue, #005D9E);
-    background: var(--dark-blue, #123659);
+    /* background: var(--blue, #005D9E);
+    background: var(--dark-blue, #123659); */
+    background-image: url('../assets/coffee-image1.png');
+    /* background-image: url('../assets/coffee-image2.jpeg'); */
+    background-position: top;
+    background-size: cover;
     /* clip-path: ellipse(100% 100% at 50% 0%); */
     margin-top: -100px;
     padding-top: 165px;
@@ -28,5 +32,5 @@
     /* color: var(--yellow, #F1CB63); */
     color: white;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
