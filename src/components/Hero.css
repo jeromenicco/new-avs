@@ -6,6 +6,7 @@
     box-sizing: border-box;
     /* background: radial-gradient(#7c0505, #000000); */
     background: var(--blue, #005D9E);
+    background: var(--dark-blue, #123659);
     /* clip-path: ellipse(100% 100% at 50% 0%); */
     margin-top: -100px;
     padding-top: 165px;
