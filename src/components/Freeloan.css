@@ -4,10 +4,11 @@
         position: relative;
         display: flex;
         box-sizing: border-box;
-        background: linear-gradient(#f3f3f3, #ffffff);
+        /* background: linear-gradient(#f3f3f3, #ffffff); */
+        background: var(--pale-salmon, #FEEEEB);
         /* clip-path: ellipse(100% 100% at 50% 0%); */
         /* border-top: 1px solid black; */
-        padding: 50px 0 0 0;
+        padding: 50px 0;
         /* transform: skewY(-2deg) */
     
 }
@@ -18,4 +19,7 @@
 
 .freeloan-title {
     /* text-align: center; */
+}
+
+.freeloan-filler {
 }

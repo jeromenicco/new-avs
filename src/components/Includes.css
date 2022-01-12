@@ -1,5 +1,5 @@
 .includes-container {
-    height: 1050px;
+    height: 1100px;
     width: 100%;
     position: relative;
     display: flex;
@@ -9,6 +9,7 @@
     /* border-top: 1px solid black; */
     padding-top: 50px;
     transform: skewY(-2deg);
+    margin-top: -30px;
 }
 
 .includes-content {
@@ -61,13 +62,14 @@ li {
 .circle-div {
     height: 100px;
     width: 100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50%;
     overflow: hidden;
 }
 
 .circle-div img {
     width: inherit;
+
 }
 
 .includes-text-content {

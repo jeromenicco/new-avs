@@ -8,9 +8,39 @@
   }
 
   /* NAVBAR */
+  .nav-container {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    margin-top: -100px;
+    padding-top: 100px;
+    /* transform: skewY(2deg); */
+    z-index: 10;
+    transition: 1s;
+  }
+
+
+  .nav-container-shifted {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    margin-top: -150px;
+    padding-top: 100px;
+    /* transform: skewY(2deg); */
+    z-index: 10;
+    transition: 1s;
+  }
 
   .navbar {
-    margin: auto 15px;
+    /* margin: auto 15px; */
+  }
+
+  .navbar-hidden {
+
   }
 
   .parallax-text {
@@ -20,6 +50,11 @@
   .menu-items-container {
     /* flex-direction: column;
     text-align: end; */
+    /* display: none; */
+  }
+
+  .menu-items-container-hidden {
+    /* display: none; */
   }
   
   /* HERO */

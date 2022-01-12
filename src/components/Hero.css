@@ -4,8 +4,8 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    /* background: linear-gradient(#000000, #4c80f1); */
-    background: #272d7e;
+    /* background: radial-gradient(#7c0505, #000000); */
+    background: var(--blue, #005D9E);
     /* clip-path: ellipse(100% 100% at 50% 0%); */
     margin-top: -100px;
     padding-top: 165px;
@@ -24,7 +24,8 @@
     font-size: 40px;
     font-weight: bold;
     margin: 0;
-    color: rgb(243, 243, 243);
+    /* color: var(--yellow, #F1CB63); */
+    color: white;
     position: absolute;
     z-index: -1;
 }

@@ -27,7 +27,7 @@ const navItems = [
 function Navbar({ Link }) {
 
     const [scrollDown, setScrollDown] = useState(false)
-    const [opacity, setOpactity] = useState(false)
+    const [shifted, setShifted] = useState(false)
 
     let lastScrollY = window.scrollY
 
@@ -38,8 +38,6 @@ function Navbar({ Link }) {
                 setScrollDown(true)
             if (window.scrollY === 0)
                 setScrollDown(false)
-            if (window.screenY > 50)
-                setOpactity(true)
         })
 
         return () => {
@@ -49,7 +47,7 @@ function Navbar({ Link }) {
 
 
     return (
-        <div className='nav-container'>
+        <div className={ !shifted ? 'nav-container' : 'nav-container-shifted'}>
             <nav className={!scrollDown ? 'navbar' : 'navbar-hidden'}>
                 {/* <nav className='navbar'> */}
                 <Link
@@ -90,6 +88,8 @@ function Navbar({ Link }) {
                             )
 
                         }
+                        {/* <p onClick={() => setShifted(true)}>MENU</p> */}
+                        
                     </div>
                 </div>
             </nav>

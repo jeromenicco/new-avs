@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Parallax } from 'react-parallax'
+
 import './About.css'
 
 
@@ -10,7 +12,23 @@ function About({ Link }) {
             <div className='component-content about-content'>
                 <div>
                     <p className='paragraph-title'>About</p>
-                    <p className='paragraph-text'>Using our experience, we match the perfect machines to your business needs, finding a solution that suits your requirements and your budget while delivering great tasting beverages and snacks for your staff and your customers.</p>
+                    <Parallax
+                        style={{ overflow: 'visible', position: 'relative'}}
+                        strength={100}
+                        renderLayer={(percentage) => (
+                            <div style={{
+                                // position: "absolute",
+                                marginTop: "5%",
+                                width: '100%',
+                                marginTop: 100 * percentage,
+                            }}>
+                                <p className='paragraph-text'>
+                                Using our experience, we match the perfect machines to your business needs, finding a solution that suits your requirements and your budget while delivering great tasting beverages and snacks for your staff and your customers.</p>
+                            </div>
+                        )}
+                    >
+                    </Parallax>
+                    {/* <p className='paragraph-text'>Using our experience, we match the perfect machines to your business needs, finding a solution that suits your requirements and your budget while delivering great tasting beverages and snacks for your staff and your customers.</p> */}
                 </div>
 
                 <div className='loan-button-container'>

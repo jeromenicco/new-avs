@@ -1,26 +1,36 @@
 import React from 'react'
 import { MdDoneOutline } from 'react-icons/md';
+import { Parallax } from 'react-parallax'
 
-import icon1 from '../assets/noun-coffee-machine1.png'
+
+// import icon2 from '../assets/avs-icon2.png'
+// import icon3 from '../assets/avs-icon3.png'
+// import icon4 from '../assets/avs-icon4.png'
+// import icon5 from '../assets/avs-icon5.png'
+// import icon6 from '../assets/avs-icon6.png'
 
 import './Includes.css'
 
 const includesItems = [
     {
         text: 'Free-standing and counter top hot drinks machines',
-        image: icon1,
+        // image: icon2,
     },
     {
         text: 'Top of the Range Coffee Machines',
+        // image: icon3,
     },
     {
         text: 'Cold drinks machines',
+        // image: icon4,
     },
     {
         text: 'Fresh Food Machines (sandwiches, pies, fruit)',
+        // image: icon5,
     },
     {
         text: 'Water Coolers',
+        // image: icon6,
     },
 
 ]
@@ -46,10 +56,25 @@ function Includes({ Link }) {
                     }
                 </div>
                 <div className='component-content includes-text-content'>
-                    <p className='paragraph-text'>All our machines are available to <span>buy, rent or lease.</span><br /><br />
-                        AVS will handle everything for you…
-                        from planning and installing, to restocking and servicing.<br/>
-                        With our flexible, efficient and friendly service, we will make sure you, your staff, and your customers are happy.</p>
+                    <Parallax
+                        style={{ overflow: 'visible', position: 'relative' }}
+                        strength={100}
+                        renderLayer={(percentage) => (
+                            <div style={{
+                                // position: "absolute",
+                                marginTop: "5%",
+                                width: '100%',
+                                marginTop: 100 * percentage,
+                            }}>
+                                <p className='paragraph-text'>All our machines are available to <span>buy, rent or lease.</span><br /><br />
+                                    AVS will handle everything for you…
+                                    from planning and installing, to restocking and servicing.<br />
+                                    With our flexible, efficient and friendly service, we will make sure you, your staff, and your customers are happy.</p>
+                            </div>
+                        )}
+                    >
+                    </Parallax>
+
                     <div className='loan-button-container'>
                         <Link
                             activeClass="active-nav-link"
