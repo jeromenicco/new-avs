@@ -5,11 +5,13 @@ import './Navbar.css'
 const navItems = [
     {
         item: 'About',
-        path: 'about-section'
+        path: 'hero-section',
+        scrollOffset: -80,
     },
     {
         item: 'Free Loan',
-        path: 'freeloan-section'
+        path: 'freeloan-section',
+        scrollOffset: -50,
     },
     // {
     //     item: 'Blog',
@@ -17,24 +19,27 @@ const navItems = [
     // },
     {
         item: 'Contact',
-        path: 'contact-section'
+        path: 'contact-section',
+        scrollOffset: -20
     },
 ]
 
 function Navbar({ Link }) {
 
     const [scrollDown, setScrollDown] = useState(false)
+    const [opacity, setOpactity] = useState(false)
 
     let lastScrollY = window.scrollY
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
+            if (window.scrollY > 400)
                 // window.innerWidth < 850 &&
                 setScrollDown(true)
-            }
             if (window.scrollY === 0)
                 setScrollDown(false)
+            if (window.screenY > 50)
+                setOpactity(true)
         })
 
         return () => {
@@ -71,7 +76,7 @@ function Navbar({ Link }) {
                                     to={item.path}
                                     spy={true}
                                     smooth={true}
-                                    offset={-80}
+                                    offset={item.scrollOffset}
                                     duration={800}
 
                                 >
