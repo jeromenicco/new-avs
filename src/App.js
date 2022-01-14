@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 // import WhatIDo from './components/WhatIDo';
 // import Work from './components/Work';
 // import Contact from './components/Contact';
+import { useMediaQuery } from 'react-responsive'
 
 import { Link } from 'react-scroll'
 
@@ -20,6 +21,8 @@ import './responsive.css'
 import SectionBreak from './components/SectionBreak'
 
 function App() {
+  const isLaptop = useMediaQuery({ query: '(min-width: 850px)' })
+
 
   // const content = document.querySelectorAll('.item-intersection') 
 
@@ -41,7 +44,7 @@ function App() {
   
   return (
     <div className="app">
-      <Navbar Link={Link} />
+      <Navbar Link={Link} isLaptop={isLaptop} />
       <Hero />
       <About Link={Link} />
       <Freeloan Link={Link} />

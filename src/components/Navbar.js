@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import BurgerMenu from './BurgerMenu'
+
 import './Navbar.css'
 
 const navItems = [
@@ -24,10 +26,10 @@ const navItems = [
     },
 ]
 
-function Navbar({ Link }) {
+function Navbar({ Link, isLaptop }) {
 
     const [scrollDown, setScrollDown] = useState(false)
-    const [shifted, setShifted] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     let lastScrollY = window.scrollY
 
@@ -45,9 +47,14 @@ function Navbar({ Link }) {
         }
     }, [])
 
+    useEffect(() => {
+        isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'
+    }, [isOpen])
+    
+
 
     return (
-        <div className={ !shifted ? 'nav-container' : 'nav-container-shifted'}>
+        <div className='nav-container'>
             <nav className={!scrollDown ? 'navbar' : 'navbar-hidden'}>
                 {/* <nav className='navbar'> */}
                 <Link
@@ -56,7 +63,7 @@ function Navbar({ Link }) {
                     smooth={true}
                     // offset={-80}
                     duration={800}
-                    className={ !scrollDown ? 'logo-container' : 'logo-container-hidden'}
+                    className={!scrollDown ? 'logo-container' : 'logo-container-hidden'}
                 >
                     <p className='logo-words'><span className='logo-letter'>A</span>rea</p>
                     <p className='logo-words'><span className='logo-letter'>V</span>ending</p>
@@ -65,32 +72,45 @@ function Navbar({ Link }) {
 
                 <div className={!scrollDown ? 'phone-menu-container' : 'phone-menu-container-hidden'}>
                     <a href="tel:+447850393592" className={!scrollDown ? 'phone-number' : 'phone-number-hidden'}><p>07850 393 592</p></a>
-                    {/* <p className='menu-button'>Menu</p> */}
-                    <div className={!scrollDown ? 'menu-items-container' : 'menu-items-container-hidden'}>
-                        {
-                            navItems.map((item, index) =>
-                                <Link
-                                    activeClass={!scrollDown ? "active-nav-link" : 'active-nav-link-hidden'}
-                                    to={item.path}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={item.scrollOffset}
-                                    duration={800}
+                    {
+                        isLaptop ?
+                            <div className={!scrollDown ? 'menu-items-container' : 'menu-items-container-hidden'}>
+                                {
+                                    navItems.map((item, index) =>
+                                        <Link
+                                            activeClass={!scrollDown ? "active-nav-link" : 'active-nav-link-hidden'}
+                                            to={item.path}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={item.scrollOffset}
+                                            duration={800}
 
-                                >
-                                    <div className={!scrollDown ? 'menu-items-container' : 'menu-items-container-hidden'}>
-                                        <p>
-                                            {item.item}
-                                        </p>
+                                        >
+                                            <div className={!scrollDown ? 'menu-items-container' : 'menu-items-container-hidden'}>
+                                                <p>
+                                                    {item.item}
+                                                </p>
 
-                                    </div>
-                                </Link>
-                            )
+                                            </div>
+                                        </Link>
+                                    )
 
-                        }
-                        {/* <p onClick={() => setShifted(true)}>MENU</p> */}
-                        
-                    </div>
+                                }
+
+                            </div>
+                            :
+                            <div className='burger-button-container'>
+                                <p onClick={() => setIsOpen(!isOpen)}>MENU</p>
+                            </div>
+                    }
+                    {
+                        isOpen && 
+                            <BurgerMenu
+                                    navItems={navItems}
+                                    setScrollDown={scrollDown}
+                                    isOpen={isOpen}
+                            />
+                    }
                 </div>
             </nav>
         </div>

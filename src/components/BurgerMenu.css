@@ -1,0 +1,20 @@
+.burger {
+    background: black;
+    display: flex;
+    color: white;
+    /* opacity: 0.9; */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    top: 100px;
+    right: 0;
+    overflow: hidden;
+}
+
+.burger p {
+    margin: 0;
+    font-family: 'Recoleta-bold';
+    font-size: 30px;
+    text-transform: capitalize;
+}
