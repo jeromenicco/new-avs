@@ -7,7 +7,7 @@
     /* background: radial-gradient(#7c0505, #000000); */
     /* background: var(--blue, #005D9E);
     background: var(--dark-blue, #123659); */
-    background-image: url('../assets/coffee-image1.png');
+    background-image: url('../assets/avs-hero1.jpeg');
     /* background-image: url('../assets/coffee-image2.jpeg'); */
     background-position: top;
     background-size: cover;
@@ -15,6 +15,15 @@
     margin-top: -100px;
     padding-top: 165px;
     transform: skewY(2deg);
+}
+
+.hero-filter {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: -165px;
+    background: black;
+    opacity: 0.5;
 }
 
 .hero-content {
@@ -32,5 +41,4 @@
     /* color: var(--yellow, #F1CB63); */
     color: white;
     position: absolute;
-    z-index: 0;
 }

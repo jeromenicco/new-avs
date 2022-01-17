@@ -43,7 +43,7 @@ function Includes({ Link }) {
                 <div className='includes-items-container'>
                     {
                         includesItems.map((item, index) => (
-                            <div className='inner'>
+                            <div key={index} className='inner'>
                                 <div className='circle-div'>
                                     {/* <img src={item.image} alt={index} /> */}
                                 </div>

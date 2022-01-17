@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { setBurgerIsVisible } from '../redux/slices/burgerSlice'
 import BurgerMenu from './BurgerMenu'
 
 import './Navbar.css'
@@ -15,10 +16,10 @@ const navItems = [
         path: 'freeloan-section',
         scrollOffset: -50,
     },
-    // {
-    //     item: 'Blog',
-    //     path: 'blog'
-    // },
+    {
+        item: 'News',
+        path: 'news'
+    },
     {
         item: 'Contact',
         path: 'contact-section',
@@ -27,6 +28,9 @@ const navItems = [
 ]
 
 function Navbar({ Link, isLaptop }) {
+
+    const burgerIsVisible = useSelector(state => state.burger.burgerIsVisible)
+    const dispatch = useDispatch()
 
     const [scrollDown, setScrollDown] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
@@ -45,17 +49,21 @@ function Navbar({ Link, isLaptop }) {
         return () => {
             lastScrollY = window.scrollY
         }
-    }, [])
+    }, [lastScrollY])
 
     useEffect(() => {
-        isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'
+        isOpen
+            ?
+            document.body.style.overflow = 'hidden'
+            :
+            document.body.style.overflow = 'unset'
     }, [isOpen])
-    
+
 
 
     return (
         <div className='nav-container'>
-            <nav className={!scrollDown ? 'navbar' : 'navbar-hidden'}>
+            <nav className={!scrollDown ? 'navbar fixed' : 'navbar-hidden'}>
                 {/* <nav className='navbar'> */}
                 <Link
                     to='hero-section'
@@ -78,6 +86,7 @@ function Navbar({ Link, isLaptop }) {
                                 {
                                     navItems.map((item, index) =>
                                         <Link
+                                            key={index}
                                             activeClass={!scrollDown ? "active-nav-link" : 'active-nav-link-hidden'}
                                             to={item.path}
                                             spy={true}
@@ -100,16 +109,25 @@ function Navbar({ Link, isLaptop }) {
                             </div>
                             :
                             <div className='burger-button-container'>
-                                <p onClick={() => setIsOpen(!isOpen)}>MENU</p>
+                                <p
+                                    onClick={
+                                        () => dispatch(
+                                            setBurgerIsVisible(!burgerIsVisible)
+                                        )
+                                    }
+                                >
+                                    MENU
+                                </p>
                             </div>
                     }
                     {
-                        isOpen && 
-                            <BurgerMenu
-                                    navItems={navItems}
-                                    setScrollDown={scrollDown}
-                                    isOpen={isOpen}
-                            />
+                        burgerIsVisible &&
+                        <BurgerMenu
+                            navItems={navItems}
+                            Link={Link}
+                            dispatch={dispatch}
+                            setBurgerIsVisible={setBurgerIsVisible}
+                        />
                     }
                 </div>
             </nav>

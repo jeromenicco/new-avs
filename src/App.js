@@ -8,17 +8,14 @@ import Includes from './components/Includes'
 import Blog from './components/Blog'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-// import WhatIDo from './components/WhatIDo';
-// import Work from './components/Work';
-// import Contact from './components/Contact';
-import { useMediaQuery } from 'react-responsive'
+import SectionBreak from './components/SectionBreak'
 
+import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-scroll'
 
 
 import './App.css';
 import './responsive.css'
-import SectionBreak from './components/SectionBreak'
 
 function App() {
   const isLaptop = useMediaQuery({ query: '(min-width: 850px)' })

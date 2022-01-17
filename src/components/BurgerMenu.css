@@ -1,20 +1,29 @@
-.burger {
+.burger-container {
     background: black;
     display: flex;
+    flex-direction: column;
     color: white;
     /* opacity: 0.9; */
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
     top: 100px;
     right: 0;
-    overflow: hidden;
 }
 
-.burger p {
+.burger-items-wrapper {
+    margin: 4em auto auto 2em;
+}
+
+.burger-item p {
     margin: 0;
+    padding-bottom: 0.5em;
+}
+
+.burger-item {
+    color: white;
     font-family: 'Recoleta-bold';
     font-size: 30px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
+
