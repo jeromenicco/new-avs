@@ -33,7 +33,6 @@ function Navbar({ Link, isLaptop }) {
     const dispatch = useDispatch()
 
     const [scrollDown, setScrollDown] = useState(false)
-    const [isOpen, setIsOpen] = useState(false)
 
     let lastScrollY = window.scrollY
 
@@ -52,12 +51,12 @@ function Navbar({ Link, isLaptop }) {
     }, [lastScrollY])
 
     useEffect(() => {
-        isOpen
+        burgerIsVisible
             ?
             document.body.style.overflow = 'hidden'
             :
             document.body.style.overflow = 'unset'
-    }, [isOpen])
+    }, [burgerIsVisible])
 
 
 

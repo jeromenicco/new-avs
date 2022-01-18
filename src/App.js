@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Freeloan from './components/Freeloan'
 import Includes from './components/Includes'
-import Blog from './components/Blog'
+import News from './components/News'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import SectionBreak from './components/SectionBreak'
@@ -28,7 +28,7 @@ function App() {
       <Freeloan Link={Link} />
       <SectionBreak />
       <Includes Link={Link}/>
-      <Blog />
+      <News />
       <Contact />
       <Footer />
     </div>
