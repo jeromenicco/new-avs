@@ -6,10 +6,10 @@ import './Hero.css'
 function Hero() {
     return (
         <div className='hero-container' id='hero-section'>
-            <div className='hero-filter'/>
+            <div className='hero-filter' />
             <div className='component-content hero-content'>
                 <Parallax
-                style={{ overflow: 'visible', position: 'relative', height: '300px'}}
+                    style={{ overflow: 'visible', position: 'relative', height: '300px' }}
                     strength={100}
                     renderLayer={(percentage) => (
                         <div style={{

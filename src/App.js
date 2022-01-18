@@ -20,25 +20,6 @@ import './responsive.css'
 function App() {
   const isLaptop = useMediaQuery({ query: '(min-width: 850px)' })
 
-
-  // const content = document.querySelectorAll('.item-intersection') 
-
-  // const observer = new IntersectionObserver(
-  //   entries => {
-  //     entries.forEach(entry => {
-  //       console.log(entries)
-  //       entry.target.classList.toggle('.show', entry.isIntersecting)
-  //     })
-  //   },
-  //   {
-  //     threshold: 1,
-  //   }
-  // )
-
-  //   content.forEach(item => observer.observe(item))
-
-
-  
   return (
     <div className="app">
       <Navbar Link={Link} isLaptop={isLaptop} />
