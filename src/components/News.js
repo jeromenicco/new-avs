@@ -18,6 +18,7 @@ function News() {
         <div className='news-container' id='news-section'>
             <div className='news-content'>
                 <p className='paragraph-title'>News</p>
+                <div className='carousel-wrapper'>
                 <Swiper
                     className="swiper-container"
                     slidesPerView={3}
@@ -48,6 +49,7 @@ function News() {
                         ))
                     }
                 </Swiper>
+                </div>
             </div>
         </div>
     )

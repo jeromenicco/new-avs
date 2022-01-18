@@ -3,7 +3,7 @@
     height: 600px;
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     padding-bottom: 70px;
     background: rgb(227, 227, 255);
     transform: skewY(-2deg);
@@ -13,6 +13,11 @@
     max-width: 80%;
     margin: 0 auto; 
     transform: skewY(2deg);
+}
+
+.carousel-wrapper {
+    position: relative;
+    height: fit-content;
 }
 
 
@@ -33,14 +38,21 @@
   justify-content: center;
   align-items: center;
 }
+
+
 .swiper-button-next {
-    top: 20em !important;
+    top: 50% !important;
     right: -60px !important;
     left: auto;
 }
 .swiper-button-prev {
+    top: 50% !important;
     left: -60px !important;
     right: auto;
+}
+
+.swiper-button-disabled {
+    
 }
 
 
