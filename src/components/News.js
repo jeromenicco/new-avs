@@ -17,38 +17,55 @@ function News() {
     return (
         <div className='news-container' id='news-section'>
             <div className='news-content'>
-                <p className='paragraph-title'>News</p>
+                <div className='component-content'>
+                    <p className='paragraph-title news-title'>News</p>
+                </div>
                 <div className='carousel-wrapper'>
-                <Swiper
-                    className="swiper-container"
-                    slidesPerView={3}
-                    spaceBetween={30}
-                    navigation={true}
-                    speed={700}
-                >
-                    {
-                        newsData.map(item => (
-                            <SwiperSlide>
-                                <div className='card-container'>
-                                    <div>
-                                        <img src={item.image} alt='coffee-break' />
-                                        <div className='news-inner-container'>
-                                            <div>
-                                                <h3>{item.location}</h3>
-                                                {/* <GoLocation /> */}
+                    <Swiper
+                        className="swiper-container"
+                        slidesPerView={3}
+                        spaceBetween={30}
+                        navigation={true}
+                        speed={700}
+                    >
+                        {
+                            newsData.map(item => (
+                                <SwiperSlide>
+                                    {
+                                        item.withImage === true ?
+                                            <div className='card-container'>
+                                                <div>
+                                                    <img src={item.image} alt='coffee-break' />
+                                                    <div className='news-inner-container'>
+                                                        <div>
+                                                            <h3 className='news-card-title'>{item.location}</h3>
+                                                            {/* <GoLocation /> */}
+                                                        </div>
+                                                        <div>
+                                                            <h4>{item.date}</h4>
+                                                            {/* <FiClock /> */}
+                                                        </div>
+                                                    </div>
+                                                    <div className='content-container'>
+                                                        <p>{item.content}</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <h3>{item.date}</h3>
-                                                {/* <FiClock /> */}
+                                            :
+                                            <div className='card-container'>
+                                                <div>
+                                                    <div className='news-inner-container2'>
+                                                        <h3 className='news-card-title'>{item.title}</h3>
+                                                        <p>{item.content}</p>
+                                                        <h4>{item.date}</h4>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <p>{item.comment}</p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))
-                    }
-                </Swiper>
+                                    }
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
                 </div>
             </div>
         </div>

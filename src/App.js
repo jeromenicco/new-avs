@@ -26,7 +26,7 @@ function App() {
       <Hero />
       <About Link={Link} />
       <Freeloan Link={Link} />
-      <SectionBreak />
+      {/* <SectionBreak /> */}
       <Includes Link={Link}/>
       <News />
       <Contact />

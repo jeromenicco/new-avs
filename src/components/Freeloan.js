@@ -12,7 +12,9 @@ function Freeloan({ Link }) {
         <>
             <div className='freeloan-container' id='freeloan-section'>
                 <div className='component-content freeloan-content'>
-                    <p className='paragraph-title freeloan-title'>The complete managed vending service for your business.</p>
+                    <p className='paragraph-title freeloan-title'>
+                        Free loan vending
+                    </p>
                     <Parallax
                         style={{ overflow: 'visible', position: 'relative' }}
                         strength={100}

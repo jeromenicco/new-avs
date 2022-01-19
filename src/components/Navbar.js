@@ -18,7 +18,9 @@ const navItems = [
     },
     {
         item: 'News',
-        path: 'news'
+        path: 'news-section',
+        scrollOffset: 50,
+
     },
     {
         item: 'Contact',

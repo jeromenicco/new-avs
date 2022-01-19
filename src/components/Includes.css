@@ -9,12 +9,23 @@
     /* border-top: 1px solid black; */
     padding-top: 50px;
     transform: skewY(-2deg);
+    /* background-image: url('../assets/avs-hero1.jpeg');
+    background-position: top;
+    background-size: cover; */
     margin-top: -30px;
 }
 
 .includes-content {
     transform: skewY(2deg);
 }
+/* .dark-filter-includes {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: -51px;
+    background: black;
+    opacity: 0.5;
+  } */
 
 
 

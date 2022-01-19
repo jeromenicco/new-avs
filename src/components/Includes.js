@@ -38,6 +38,7 @@ const includesItems = [
 function Includes({ Link }) {
     return (
         <div className='includes-container'>
+            <div className='dark-filter-includes' />
             <div className='component-content includes-content'>
                 <p className='paragraph-title title-includes'>Our range of machines includes</p>
                 <div className='includes-items-container'>

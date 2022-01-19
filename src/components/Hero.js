@@ -6,7 +6,7 @@ import './Hero.css'
 function Hero() {
     return (
         <div className='hero-container' id='hero-section'>
-            <div className='hero-filter' />
+            <div className='dark-filter-hero' />
             <div className='component-content hero-content'>
                 <Parallax
                     style={{ overflow: 'visible', position: 'relative', height: '300px' }}
@@ -19,7 +19,9 @@ function Hero() {
                             marginTop: 100 * percentage,
                         }}>
                             <p className='parallax-text'>
-                                AVS has been supplying and managing vending machine services to businesses across East Anglia for over 30 years, and nationally for the last 10 years.
+                            The complete managed vending service for your business.<br />
+                            <span className='hero-sub-p'>For businesses with more than 75 staff,</span><br />
+                            <span className='hero-sub-span'>AVS offer a free loan vending option.</span>
                             </p>
                         </div>
                     )}

@@ -139,11 +139,11 @@
 }
 
 .active-nav-link {
-    color: #ff473d;
+    /* color: #ff473d; */
 }
 
 .active-nav-link-hidden {
-    color: #ff473d;
+    /* color: #ff473d; */
 }
 
 .menu-items-container p:hover, .menu-items-container-hidden p:hover {

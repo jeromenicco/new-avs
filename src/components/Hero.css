@@ -1,5 +1,5 @@
 .hero-container {
-    height: 600px;
+    height: 650px;
     width: 100%;
     position: relative;
     display: block;
@@ -16,15 +16,14 @@
     padding-top: 165px;
     transform: skewY(2deg);
 }
-
-.hero-filter {
+.dark-filter-hero {
     height: 100%;
     width: 100%;
     position: absolute;
     margin-top: -165px;
     background: black;
-    opacity: 0.5;
-}
+    opacity: 0.6;
+  }
 
 .hero-content {
     transform: skewY(-2deg);
@@ -41,4 +40,10 @@
     /* color: var(--yellow, #F1CB63); */
     color: white;
     position: absolute;
+}
+
+.hero-sub-p {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
