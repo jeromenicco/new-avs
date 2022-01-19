@@ -25,7 +25,7 @@ function News({ isLaptop }) {
                     <Swiper
                         className="swiper-container"
                         slidesPerView={isLaptop ? 3 : 1.2}
-                        spaceBetween={isLaptop ? 30 : 15}
+                        spaceBetween={isLaptop ? 30 : 20}
                         navigation={isLaptop ? true : false}
                         speed={700}
                     >
