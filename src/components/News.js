@@ -12,7 +12,7 @@ import "swiper/css/navigation"
 import SwiperCore, { Navigation } from "swiper"
 
 
-function News() {
+function News({ isLaptop }) {
     SwiperCore.use([Navigation]);
     return (
         <div className='news-container' id='news-section'>
@@ -24,9 +24,9 @@ function News() {
                 <div className='carousel-wrapper'>
                     <Swiper
                         className="swiper-container"
-                        slidesPerView={3}
+                        slidesPerView={isLaptop ? 3 : 1}
                         spaceBetween={30}
-                        navigation={true}
+                        navigation={isLaptop ? true : false}
                         speed={700}
                     >
                         {

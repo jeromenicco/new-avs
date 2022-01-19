@@ -28,7 +28,7 @@ function App() {
       <Freeloan Link={Link} />
       {/* <SectionBreak /> */}
       <Includes Link={Link}/>
-      <News />
+      <News isLaptop={isLaptop} />
       <Contact />
       <Footer />
     </div>
