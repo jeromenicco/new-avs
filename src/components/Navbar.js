@@ -19,7 +19,7 @@ const navItems = [
     {
         item: 'News',
         path: 'news-section',
-        scrollOffset: 50,
+        scrollOffset: 10,
 
     },
     {
