@@ -24,8 +24,8 @@ function News({ isLaptop }) {
                 <div className='carousel-wrapper'>
                     <Swiper
                         className="swiper-container"
-                        slidesPerView={isLaptop ? 3 : 1}
-                        spaceBetween={30}
+                        slidesPerView={isLaptop ? 3 : 1.2}
+                        spaceBetween={isLaptop ? 30 : 15}
                         navigation={isLaptop ? true : false}
                         speed={700}
                     >

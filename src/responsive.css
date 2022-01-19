@@ -66,12 +66,21 @@
   /* ABOUT */
 
   .about-container {
-    height: 600px;
-    margin-top: -70px;
+    height: 650px;
+    margin-top: 80px;
+  }
+
+  .about-paragraph-title {
+    text-align: center;
+  }
+
+  .paragraph-title {
+    text-align: center;
   }
 
   .contact-title {
     line-height: 0.6;
+
 }
   
   /* INCLUDES */
@@ -86,6 +95,20 @@
 
   .loan-button-container {
     margin-top: 30px;
+  }
+
+  /* NEWS */ 
+
+  .news-content {
+    max-width: 100%;
+  }
+
+  .card-container {
+    width: 300px;
+  }
+
+  .swiper-wrapper {
+    margin-left: 10px;
   }
 
 
