@@ -13,25 +13,22 @@ import './Includes.css'
 
 const includesItems = [
     {
-        text: 'Free-standing and counter top hot drinks machines',
+        text: 'Coffee & hot drinks machines',
         // image: icon2,
     },
     {
-        text: 'Top of the Range Coffee Machines',
+        text: 'Cold drinks machines',
         // image: icon3,
     },
     {
-        text: 'Cold drinks machines',
+        text: 'Snacks machines',
         // image: icon4,
     },
     {
-        text: 'Fresh Food Machines (sandwiches, pies, fruit)',
+        text: 'Fresh Food Machines',
         // image: icon5,
     },
-    {
-        text: 'Water Coolers',
-        // image: icon6,
-    },
+
 
 ]
 

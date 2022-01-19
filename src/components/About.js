@@ -11,7 +11,7 @@ function About({ Link }) {
         <div className='about-container' id='about-section'>
             <div className='component-content about-content'>
                 <div>
-                    <p className='paragraph-title'>
+                    <p className='about-paragraph-title'>
                     AVS has been supplying and managing vending machine services to businesses across East Anglia for over 30 years, and nationally for the last 10 years.
                     </p>
                     <Parallax

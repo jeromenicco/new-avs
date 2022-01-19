@@ -1,13 +1,7 @@
 import coffeeIMG1 from './assets/coffee-image1.png'
+import coffeeIMG2 from './assets/coffee-image2.jpeg'
 
 const newsData = [
-    {
-        withImage: true,
-        image: coffeeIMG1,
-        location: 'Colchester',
-        date: 'Oct 31th 2021',
-        content: 'Typical coffee break in Colchester with David our best employee!'
-    },
     {
         withImage: true,
         image: coffeeIMG1,
@@ -20,6 +14,13 @@ const newsData = [
         title: 'New machines available',
         date: 'Oct 31th 2021',
         content: 'When an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s.'
+    },
+    {
+        withImage: true,
+        image: coffeeIMG2,
+        location: 'Colchester',
+        date: 'Oct 31th 2021',
+        content: 'Typical coffee break in Colchester with David our best employee!'
     },
     {
         withImage: true,

@@ -17,6 +17,7 @@
 
 .includes-content {
     transform: skewY(2deg);
+    font-family: 'Raleway', sans-serif;
 }
 /* .dark-filter-includes {
     height: 100%;

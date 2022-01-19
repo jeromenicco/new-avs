@@ -19,6 +19,7 @@ function News() {
             <div className='news-content'>
                 <div className='component-content'>
                     <p className='paragraph-title news-title'>News</p>
+                    <p className='paragraph-text'>Our news space is uploaded frequently!</p>
                 </div>
                 <div className='carousel-wrapper'>
                     <Swiper

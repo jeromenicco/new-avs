@@ -14,6 +14,11 @@
     align-items: center;
 }
 
+.about-paragraph-title {
+    font-size: 30px;
+    font-family: 'Recoleta-Bold';
+    line-height: 1;
+}
 
 .loan-button-container button {
     padding: 15px 30px;
