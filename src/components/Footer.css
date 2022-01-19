@@ -16,9 +16,10 @@
 }
 
 .company-info {
-    margin-left: 50px;
+    margin-left: 10%;
     color: white;
     font-size: 25px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .contact-footer-container {

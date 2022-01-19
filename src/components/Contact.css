@@ -4,7 +4,8 @@
     position: relative;
     display: flex;
     box-sizing: border-box;
-    background: linear-gradient(#f3f3f3, #ffffff);
+    background: white;
+    /* background: linear-gradient(#f3f3f3, #ffffff); */
     /* clip-path: ellipse(100% 100% at 50% 0%); */
     /* border-top: 1px solid black; */
     padding: 70px 0;

@@ -1,6 +1,5 @@
 import React from 'react'
 import { MdDoneOutline } from 'react-icons/md';
-import { Parallax } from 'react-parallax'
 
 
 // import icon2 from '../assets/avs-icon2.png'
@@ -54,24 +53,14 @@ function Includes({ Link }) {
                     }
                 </div>
                 <div className='component-content includes-text-content'>
-                    <Parallax
-                        style={{ overflow: 'visible', position: 'relative' }}
-                        strength={100}
-                        renderLayer={(percentage) => (
-                            <div style={{
-                                // position: "absolute",
-                                marginTop: "5%",
-                                width: '100%',
-                                marginTop: 100 * percentage,
-                            }}>
-                                <p className='paragraph-text'>All our machines are available to <span>buy, rent or lease.</span><br /><br />
-                                    AVS will handle everything for you…
-                                    from planning and installing, to restocking and servicing.<br /><br />
-                                    With our flexible, efficient and friendly service, we will make sure you, your staff, and your customers are happy.</p>
-                            </div>
-                        )}
-                    >
-                    </Parallax>
+                    <div>
+                        <p className='paragraph-text'>All our machines are available to <span>buy, rent or lease.</span><br /><br />
+                            AVS will handle everything for you…
+                            from planning and installing, to restocking and servicing.<br /><br />
+                            With our flexible, efficient and friendly service, we will make sure you, your staff, and your customers are happy.</p>
+                    </div>
+
+
 
                     <div className='loan-button-container'>
                         <Link

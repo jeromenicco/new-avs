@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Parallax } from 'react-parallax'
-
 import './About.css'
 
 
@@ -14,22 +12,11 @@ function About({ Link }) {
                     <p className='about-paragraph-title'>
                     AVS has been supplying and managing vending machine services to businesses across East Anglia for over 30 years, and nationally for the last 10 years.
                     </p>
-                    <Parallax
-                        style={{ overflow: 'visible', position: 'relative'}}
-                        strength={100}
-                        renderLayer={(percentage) => (
-                            <div style={{
-                                // position: "absolute",
-                                marginTop: "5%",
-                                width: '100%',
-                                marginTop: 100 * percentage,
-                            }}>
+                            <div>
                                 <p className='paragraph-text'>
                                 Using our experience, we match the perfect machines to your business needs, finding a solution that suits your requirements and your budget while delivering great tasting beverages and snacks for your staff and your customers.</p>
                             </div>
-                        )}
-                    >
-                    </Parallax>
+
                     {/* <p className='paragraph-text'>Using our experience, we match the perfect machines to your business needs, finding a solution that suits your requirements and your budget while delivering great tasting beverages and snacks for your staff and your customers.</p> */}
                 </div>
 
