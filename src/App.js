@@ -18,7 +18,10 @@ import './App.css';
 import './responsive.css'
 
 function App() {
-  const isLaptop = useMediaQuery({ query: '(min-width: 850px)' })
+
+  const isMobile = useMediaQuery({ query: '(min-width: 1080px)' })
+  const isLaptop = useMediaQuery({ query: '(min-width: 1080px)' })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1080px)' })
 
   return (
     <div className="app">
@@ -26,7 +29,7 @@ function App() {
       <Hero />
       <About Link={Link} />
       <Freeloan Link={Link} />
-      {/* <SectionBreak /> */}
+      <SectionBreak />
       <Includes Link={Link}/>
       <News isLaptop={isLaptop} />
       <Contact />

@@ -10,6 +10,7 @@ import "swiper/css/navigation"
 
 
 import SwiperCore, { Navigation } from "swiper"
+import { TiSocialInstagram } from 'react-icons/ti';
 
 
 function News({ isLaptop }) {
@@ -35,9 +36,9 @@ function News({ isLaptop }) {
                                     {
                                         item.withImage === true ?
                                             <div className='card-container'>
-                                                <div>
-                                                    <img src={item.image} alt='coffee-break' />
-                                                    <div className='news-inner-container'>
+                                                <img src={item.image} alt='coffee-break' />
+                                                <div className='news-inner-container'>
+                                                    <div>
                                                         <h3 className='news-card-title'>{item.location}</h3>
                                                         <p>{item.content}</p>
                                                         <h4>{item.date}</h4>
@@ -46,8 +47,8 @@ function News({ isLaptop }) {
                                             </div>
                                             :
                                             <div className='card-container'>
-                                                <div>
-                                                    <div className='news-inner-container2'>
+                                                <div className='news-inner-container'>
+                                                    <div>
                                                         <h3 className='news-card-title'>{item.title}</h3>
                                                         <p>{item.content}</p>
                                                         <h4>{item.date}</h4>
