@@ -1,4 +1,4 @@
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
 
   /* GLOBAL */
 
@@ -110,6 +110,16 @@
   .swiper-wrapper {
     margin-left: 20px;
   }
+
+  .news-card-title {
+    font-size: 20px;
+  }
+
+  .news-inner-container h4, .news-inner-container2 h4 {
+
+    font-size: 16px;
+  }
+
 
 
   /* FOOTER */

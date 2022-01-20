@@ -38,17 +38,9 @@ function News({ isLaptop }) {
                                                 <div>
                                                     <img src={item.image} alt='coffee-break' />
                                                     <div className='news-inner-container'>
-                                                        <div>
-                                                            <h3 className='news-card-title'>{item.location}</h3>
-                                                            {/* <GoLocation /> */}
-                                                        </div>
-                                                        <div>
-                                                            <h4>{item.date}</h4>
-                                                            {/* <FiClock /> */}
-                                                        </div>
-                                                    </div>
-                                                    <div className='content-container'>
+                                                        <h3 className='news-card-title'>{item.location}</h3>
                                                         <p>{item.content}</p>
+                                                        <h4>{item.date}</h4>
                                                     </div>
                                                 </div>
                                             </div>

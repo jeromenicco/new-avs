@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { TiSocialFacebook, TiSocialInstagram } from 'react-icons/ti'
+
 import './Footer.css'
 
 function Footer() {
@@ -14,15 +16,13 @@ function Footer() {
                             Waterhouse LaneArdleigh Nr<br />
                             Colchester Essex C07 7NE</p>
                     </div>
-{/* 
-                    <div className='contact-footer-container'>
-                        <p>Contact Us</p>
-                        <p className='button-footer'>now</p>
-                    </div> */}
-
+                    <div className='social-media-container'>
+                        <TiSocialFacebook size={30} />
+                        <TiSocialInstagram size={30} />
+                    </div>
                 </div>
             </div>
-            <div className='footer-filler'/>
+            <div className='footer-filler' />
         </>
     )
 }
