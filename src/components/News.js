@@ -1,20 +1,18 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import newsData from '../newsData'
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper"
 
 import './News.css'
 
 import "swiper/css";
 import "swiper/css/navigation"
+import { is } from '@react-spring/shared';
 
 
-import SwiperCore, { Navigation } from "swiper"
-import { TiSocialInstagram } from 'react-icons/ti';
-
-
-function News({ isLaptop }) {
+function News({ isMobile, isTablet, isLaptop }) {
     SwiperCore.use([Navigation]);
+
     return (
         <div className='news-container' id='news-section'>
             <div className='news-content'>
@@ -31,8 +29,8 @@ function News({ isLaptop }) {
                         speed={700}
                     >
                         {
-                            newsData.map(item => (
-                                <SwiperSlide>
+                            newsData.map((item, index) => (
+                                <SwiperSlide key={index}>
                                     {
                                         item.withImage === true ?
                                             <div className='card-container'>

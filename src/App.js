@@ -8,7 +8,7 @@ import Includes from './components/Includes'
 import News from './components/News'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import SectionBreak from './components/SectionBreak'
+// import SectionBreak from './components/SectionBreak'
 
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-scroll'
@@ -19,7 +19,8 @@ import './responsive.css'
 
 function App() {
 
-  const isMobile = useMediaQuery({ query: '(min-width: 1080px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
+  const isTablet = useMediaQuery({ query: '(min-width: 600px)' })
   const isLaptop = useMediaQuery({ query: '(min-width: 1080px)' })
   const isBigScreen = useMediaQuery({ query: '(min-width: 1080px)' })
 
@@ -29,9 +30,9 @@ function App() {
       <Hero />
       <About Link={Link} />
       <Freeloan Link={Link} />
-      <SectionBreak />
+      {/* <SectionBreak /> */}
       <Includes Link={Link}/>
-      <News isLaptop={isLaptop} />
+      <News isMobile={isMobile} isLaptop={isLaptop} isTablet={isTablet} />
       <Contact />
       <Footer />
     </div>
