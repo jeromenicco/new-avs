@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 // import SectionBreak from './components/SectionBreak'
 
 import { useMediaQuery } from 'react-responsive'
+import { useSpring, animated } from 'react-spring'
 import { Link } from 'react-scroll'
 
 
@@ -22,10 +23,17 @@ function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
   const isTablet = useMediaQuery({ query: '(min-width: 600px)' })
   const isLaptop = useMediaQuery({ query: '(min-width: 1080px)' })
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1080px)' })
+  // const isBigScreen = useMediaQuery({ query: '(min-width: 1080px)' })
+
+
+  const fadeIn = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    config: { duration: 800 }
+  })
 
   return (
-    <div className="app">
+    <animated.div className="app" style={{...fadeIn}}>
       <Navbar Link={Link} isLaptop={isLaptop} />
       <Hero />
       <About Link={Link} />
@@ -35,7 +43,7 @@ function App() {
       <News isMobile={isMobile} isLaptop={isLaptop} isTablet={isTablet} />
       <Contact />
       <Footer />
-    </div>
+    </animated.div>
   );
 }
 
