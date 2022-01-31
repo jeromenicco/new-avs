@@ -22,7 +22,7 @@ function App() {
 
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
   const isTablet = useMediaQuery({ query: '(min-width: 600px)' && '(max-width: 900px)' })
-  const isLaptop = useMediaQuery({ query: '(min-width: 1000px)' })
+  const isLaptop = useMediaQuery({ query: '(min-width: 900px)' })
   const isBigScreen = useMediaQuery({ query: '(min-width: 1900px)' })
 
   console.log(isMobile)
