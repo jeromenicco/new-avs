@@ -62,7 +62,7 @@ function News({ isMobile, isTablet, isLaptop, isBigScreen }) {
                     }
 
 
-                    {
+                    {/* {
                         isTablet &&
                         <Swiper
                             className="swiper-container"
@@ -101,7 +101,7 @@ function News({ isMobile, isTablet, isLaptop, isBigScreen }) {
                                 ))
                             }
                         </Swiper>
-                    }
+                    } */}
 
 
 
@@ -147,46 +147,46 @@ function News({ isMobile, isTablet, isLaptop, isBigScreen }) {
                         </Swiper>
                     }
 
-                    {
-                        isBigScreen &&
-                        <Swiper
-                            className="swiper-container"
-                            slidesPerView={5}
-                            spaceBetween={20}
-                            navigation={true}
-                            speed={700}
-                        >
-                            {
-                                newsData.map((item, index) => (
-                                    <SwiperSlide key={index}>
-                                        {
-                                            item.withImage === true ?
-                                                <div className='card-container'>
-                                                    <img src={item.image} alt='coffee-break' />
-                                                    <div className='news-inner-container'>
-                                                        <div>
-                                                            <h3 className='news-card-title'>{item.location}</h3>
-                                                            <p>{item.content}</p>
-                                                            <h4>{item.date}</h4>
+                        {/* {
+                            isBigScreen &&
+                            <Swiper
+                                className="swiper-container"
+                                slidesPerView={5}
+                                spaceBetween={20}
+                                navigation={true}
+                                speed={700}
+                            >
+                                {
+                                    newsData.map((item, index) => (
+                                        <SwiperSlide key={index}>
+                                            {
+                                                item.withImage === true ?
+                                                    <div className='card-container'>
+                                                        <img src={item.image} alt='coffee-break' />
+                                                        <div className='news-inner-container'>
+                                                            <div>
+                                                                <h3 className='news-card-title'>{item.location}</h3>
+                                                                <p>{item.content}</p>
+                                                                <h4>{item.date}</h4>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                :
-                                                <div className='card-container'>
-                                                    <div className='news-inner-container'>
-                                                        <div>
-                                                            <h3 className='news-card-title'>{item.title}</h3>
-                                                            <p>{item.content}</p>
-                                                            <h4>{item.date}</h4>
+                                                    :
+                                                    <div className='card-container'>
+                                                        <div className='news-inner-container'>
+                                                            <div>
+                                                                <h3 className='news-card-title'>{item.title}</h3>
+                                                                <p>{item.content}</p>
+                                                                <h4>{item.date}</h4>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                        }
-                                    </SwiperSlide>
-                                ))
-                            }
-                        </Swiper>
-                    }
+                                            }
+                                        </SwiperSlide>
+                                    ))
+                                }
+                            </Swiper>
+                        } */}
 
 
 
