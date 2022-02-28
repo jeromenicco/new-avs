@@ -9,7 +9,7 @@ function Hero() {
     const fadeInHeroText = useSpring({
         to: { opacity: 1 },
         from: { opacity: 0 },
-        delay: 1000,
+        delay: 700,
         config: { duration: 800 }
       })
     return (
