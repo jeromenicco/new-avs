@@ -1,13 +1,21 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
+import { useSpring, animated } from 'react-spring'
+
 
 import './Hero.css'
 
 function Hero() {
+    const fadeInHeroText = useSpring({
+        to: { opacity: 1 },
+        from: { opacity: 0 },
+        delay: 1000,
+        config: { duration: 800 }
+      })
     return (
         <div className='hero-container' id='hero-section'>
             <div className='dark-filter-hero' />
-            <div className='component-content hero-content'>
+            <animated.div style={{...fadeInHeroText}} className='component-content hero-content'>
                 <Parallax
                     style={{ overflow: 'visible', position: 'relative', height: '300px' }}
                     strength={100}
@@ -28,7 +36,7 @@ function Hero() {
                 >
                 </Parallax>
 
-            </div>
+            </animated.div>
         </div>
     )
 }

@@ -37,7 +37,7 @@ function App() {
   return (
     <animated.div className="app" style={{...fadeIn}}>
       <Navbar Link={Link} isLaptop={isLaptop} />
-      <Hero />
+      <Hero  />
       <About Link={Link} />
       <Freeloan Link={Link} />
       {/* <SectionBreak /> */}
